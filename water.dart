@@ -92,7 +92,7 @@ class _WaterTrackerPageState extends State<WaterTrackerPage> {
               MaterialPageRoute(builder: (context) => MealsPage()),
             );
           } else if (label == 'Profile') {
-            Navigator.pop(context); // Змінено на Navigator.pop(context)
+            Navigator.pop(context); 
           } else {
             Navigator.pushReplacement(
               context,
