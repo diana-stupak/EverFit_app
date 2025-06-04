@@ -439,7 +439,7 @@ class _GenderSelectionPageState extends State<GenderSelectionPage> {
   }
 }
 
-// Перейменували клас для кращого відображення його функціональності
+
 class WeightHeightInputPage extends StatefulWidget {
   final String email;
   final String gender;
@@ -654,10 +654,10 @@ class _AgeInputPageState extends State<AgeInputPage> {
                       ),
                     );
                   } else {
-                    // Отримуємо вік
+                   
                     String age = '${_ageController.text} years old';
 
-                    // Передаємо всі дані на екран профілю
+                   
                     Navigator.push(
                       context,
                       MaterialPageRoute(
@@ -728,7 +728,7 @@ class ProfileScreen extends StatefulWidget {
 }
 
 class _ProfileScreenState extends State<ProfileScreen> {
-  int _selectedIndex = 3; // Початковий індекс для Profile
+  int _selectedIndex = 3; 
 
   void _onItemTapped(int index) {
     setState(() {
