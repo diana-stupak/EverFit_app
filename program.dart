@@ -11,11 +11,11 @@ class ProgramPage extends StatefulWidget {
 class _ProgramPageState extends State<ProgramPage> {
   bool _showModal = false;
 
-  // Список URL-адрес або шляхів до відео
+  
   final List<String> _videoPaths = [
-    'assets/videos/sit.mp4', // Замініть на фактичний шлях до вашого відео
-    'assets/videos/set.mp4',   // Замініть на фактичний шлях до вашого відео
-    // Додайте більше шляхів до відео за потреби
+    'assets/videos/sit.mp4', 
+    'assets/videos/set.mp4',  
+    
   ];
 
   // Список контролерів відтворення відео
@@ -45,7 +45,7 @@ class _ProgramPageState extends State<ProgramPage> {
         centerTitle: true,
       ),
       body: SafeArea(
-        child: SingleChildScrollView( // Оберніть Column в SingleChildScrollView, якщо контенту багато
+        child: SingleChildScrollView( 
           padding: const EdgeInsets.all(16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -76,7 +76,7 @@ class _ProgramPageState extends State<ProgramPage> {
                 '+380 957 313 654',
                 'assets/images/meals/nazar_chaliy.jpg',
               ),
-              // Додано ще одного тренера, щоб було більше контенту для прокрутки
+             
               _buildTrainerCard(
                 'Iryna Darkiv',
                 'fitness trainer',
@@ -95,11 +95,11 @@ class _ProgramPageState extends State<ProgramPage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  _buildVideoCard(0, 'Присідання'), // Індекс першого відео
-                  _buildVideoCard(1, 'Планка'),     // Індекс другого відео
+                  _buildVideoCard(0, 'Присідання'), 
+                  _buildVideoCard(1, 'Планка'),
                 ],
               ),
-              // Можна додати більше відеокарток тут
+              
             ],
           ),
         ),
@@ -305,7 +305,7 @@ class _ProgramPageState extends State<ProgramPage> {
     return GestureDetector(
       onTap: () {
         if (label != 'Program') {
-          // Логіка для переходу на інші вкладки
+         
         }
       },
       child: Column(
