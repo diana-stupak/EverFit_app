@@ -194,7 +194,7 @@ class _MealsPageState extends State<MealsPage> {
       onTap: () {
         if (label != 'Meals') {
           if (label == 'Water') {
-            // Navigate to WaterTrackerPage when Water icon is clicked
+            
             Navigator.pushReplacement(
               context,
               MaterialPageRoute(builder: (context) => WaterTrackerPage(weight: 1)),
@@ -202,13 +202,13 @@ class _MealsPageState extends State<MealsPage> {
           } else if (label == 'Profile') {
             Navigator.pop(context);
           }
-          else if (label == 'Program'){ // Додаємо обробку для Program
+          else if (label == 'Program'){ 
             Navigator.pushReplacement(
               context,
               MaterialPageRoute(builder: (context) => ProgramPage()),
             );}
           else {
-            // Navigate to other pages
+           
             Navigator.pushReplacement(
               context,
               MaterialPageRoute(builder: (context) => Placeholder()),
@@ -237,7 +237,7 @@ class _MealsPageState extends State<MealsPage> {
   }
 }
 
-// Placeholder widget for unavailable pages
+
 class Placeholder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -249,7 +249,7 @@ class Placeholder extends StatelessWidget {
   }
 }
 
-// Data Models
+
 class MealItem {
   final String name;
   final String imageAsset;
@@ -260,7 +260,7 @@ class MealItem {
   });
 }
 
-// Sample data
+
 final List<MealItem> breakfastItems = [
   MealItem(name: 'Oatmeal', imageAsset: 'assets/images/meals/oatmeal.jpg'),
   MealItem(name: 'Eggs', imageAsset: 'assets/images/meals/eggs.jpg'),
